@@ -1,0 +1,139 @@
+.create-listing-page {
+  min-height: calc(100vh - 70px);
+  background: var(--bg-color);
+  padding: 2rem;
+}
+
+.create-listing-container {
+  max-width: 760px;
+  margin: 0 auto;
+  background: var(--bg-surface);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.create-listing-container h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.create-listing-sub {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.create-listing-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.create-listing-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.create-listing-form .form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-color);
+}
+
+.create-listing-form input,
+.create-listing-form select,
+.create-listing-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.375rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  background: var(--bg-surface);
+  color: var(--text-color);
+}
+
+.create-listing-form input:focus,
+.create-listing-form select:focus,
+.create-listing-form textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* Image Upload */
+.image-upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.image-upload-area:hover {
+  border-color: var(--primary-color);
+}
+
+.upload-placeholder span {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.upload-placeholder p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.image-previews {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.preview-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-color);
+}
+
+/* Toggles */
+.toggle-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.toggle-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+  .create-listing-form .form-row {
+    grid-template-columns: 1fr;
+  }
+  .create-listing-container {
+    padding: 1.5rem;
+  }
+}
